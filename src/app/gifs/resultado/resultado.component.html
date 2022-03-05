@@ -1,1 +1,16 @@
-<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, in? Odio placeat itaque eveniet id maiores velit nulla, modi voluptatibus ullam repellendus! Delectus fugiat odio corporis error modi tenetur ipsa.z</p>
+<div class="row">
+  <div class="col-md-4 col-sm-6 animate__animated animate__jackInTheBox" *ngFor="let gifs of resultados">
+
+    <div class="card">
+      <img
+      [src]="gifs.images.downsized_medium.url"
+      [alt]="gifs.title"
+      class="card-img-top ">
+      <div class="card-body">
+        <p class="card-text">
+          {{ gifs.title }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
